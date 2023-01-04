@@ -1,0 +1,71 @@
+.mm {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-image: url('ss.png');
+  bottom: 0px;
+  text-align: center;
+}
+
+.obstacle {
+  position: absolute;
+  width: 75px;
+  height: 60px;
+  background-image: url('m.png');
+  bottom: 0px;
+  text-align: center;
+}
+
+
+@keyframe slideright{
+  from {
+      background-position: 70000%;
+    }
+  to {
+      background-position: 0%;
+  }
+}
+
+@webkitkeyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+#world {
+  position: absolute;
+  bottom: 0px;
+  background-image: url('sky.png');
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+h1{
+  background-color:yellow;
+  color: #191d2b;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+body{
+  background-color: #191d2b;
+  color: yellow;
+}
+
+#score{
+  text-align: center;
+}
